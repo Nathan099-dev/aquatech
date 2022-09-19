@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+   <html lang="pt-br">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<head>
+     <meta charset="UTF-8">
+     <link rel="stylesheet" href="style.css">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aquatech</title>
+</head>
+    <body>
+        <header>
+          <div class="container">
+            <div class="logo">
+              <h1>Aquatech</h1>
+            </div>
+
+            <div class="menu">
+              <ul>
+                <li><a href="#">Nossos serviços</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#" onclick="Modal.open()">Login</a></li>
+              </ul>
+            </div>
+          </div>
+        </header>
+
+        <main>
+            <div class="banner">
+              <div class="container">
+                <p>Preservando <b>hoje</b> para existirem <b>amanhã</b>.</p>
+              </div>
+            </div> 
+            
+           <div class="social">
+             <div class="container">
+              <div class="caixas">
+                <div class="caixa">
+                  <img src="./assets/img/planet-earth_color.png" alt="ícone da missão da empresa Aquatech">
+  
+                  <h4>Missão</h4>
+                  <br>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+  
+                <div class="caixa">
+                  <img src="./assets/img/lightbulb_color.png" alt="ícone da visão da empresa Aquatech">
+                  <h4>Visão</h4>
+                  <br>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="caixa">
+                  <img src="./assets/img/growth_color.png" alt="Ícone dos valores da empresa Aquatech">
+                  <h4>Valores</h4>
+                  <br>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+             </div>
+           </div>
+
+           <div id="Login">
+            <div class="container">
+               <div class="modal-overlay">
+                <div class="modal-overlay-box">
+                   <form method="get">
+                    <i class="fa-solid fa-xmark" onclick="modal.close()"></i>
+                     <h2>Login</h2>
+                     <br>
+                      <input type="email" id="email" placeholder="Digite seu email" required>
+                      <input type="password" id="senha" placeholder="Digite sua senha" required>
+                      <a href="#">Ainda não possui login? Cadastre se</a>
+                      <button type="submit" id="login" onclick="login()">entrar</button>
+                    </form>
+                  </div>
+               </div>
+            </div>
+           </div>
+        </main>
+
+        <footer>
+          <div class="container">
+            <p>Feito com amor por um aluno &hearts; Sptech &copy;</p>
+          </div>
+       </footer>
+       <script src="script.js"></script>
+    </body>
+</html>
