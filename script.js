@@ -25,7 +25,7 @@ btn.addEventListener('click', function login(){
 		document.classList.add('invalid');
 
 	}else{
-		document.classList.remove('invalid');
+	     document.classList.remove('invalid');
 	}
 });
 
