@@ -65,13 +65,7 @@ header{
 
 
  .container-formulário form{
-    background-color: #e5e5e5;
-    padding: 50px 100px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+   max-width: 400px;
  }
 
  footer{
