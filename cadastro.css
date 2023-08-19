@@ -14,6 +14,10 @@
    
 }
 
+body{
+    overflow-y: hidden;
+}
+
 
 header{
     width: 100%;
@@ -25,8 +29,9 @@ header{
 .logo h1{ 
     color: #32b9cd;
     font-family: Arial, Helvetica, sans-serif;
+    padding: .5rem 0;
     font-size: 1.5rem;
-    margin-top: 1rem;
+    margin-top: .5rem;
 }
 
 
@@ -34,11 +39,12 @@ header{
 .menu{
     align-items: center;
     justify-content: center;
+    padding: .5rem 0;
 }
 
 .menu ul{
     display: flex;
-    margin-top: .75rem;
+    margin-top: .5rem;
     
 }
 
@@ -56,22 +62,91 @@ header{
 }
 
 
+.menu a:hover{
+    color: white;
+    transition: .6s;
+}
+
 .banner{
     background-image: url("./assets/img/bg-jelly-fish-para_outras_pags.png");
     padding: 300px 0;
     background-size: cover;
-    height: 95%;
+   
  } 
 
 
- .container-formulário form{
-   max-width: 400px;
+ .banner .container{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
  }
 
+
+.modal-overlay{ 
+    width: 100%;
+    height: 100vh;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.modal{
+    background-color: #f2f5f9;
+    padding: 2.5rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.modal h3{
+    text-align: center;
+    font-size: 1.75rem;
+    color: #32b9cd;
+}
+
+.modal form{
+    padding: 1.5rem;
+  
+}
+
+.modal form label{
+    color: #32b9cd;
+    font-weight: bold;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal form input{
+    padding: .25rem .5rem;
+    margin: .5rem;
+    outline: none;
+    border: 2px solid #32b9cd;
+}
+
+.modal form button{
+    align-items: center;
+    justify-content: center;
+    padding: 6px 10px;
+    border: none;
+    background-color: #32b9cd;
+    color: white;
+    cursor: pointer;
+}
+
+.modal form button:hover{
+    background-color: #0b5965;
+    transition: 0.6s;
+}
+
  footer{
-     padding: 45px 0;
+     padding: 2px 0;
      background-color: #32b9cd;
-     height: 190px;
+     height: 70px;
  }
 
 
@@ -81,8 +156,9 @@ footer .container{
 }
 
 footer .container p{
-    display: flex;
     text-align: center;
+    margin-top: 30px;
+    bottom: 0;
     justify-content: center;
     color: white;
     font-weight: bold;

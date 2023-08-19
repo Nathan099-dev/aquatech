@@ -11,13 +11,13 @@ let modal = {
 
 //===========================================================================
 
-let nome = document.getElementById('nome');
-let email = document.getElementById('email');
-let btn = document.getElementById('login');
+const nome = document.getElementById('nome');
+const email = document.getElementById('email');
+const btn = document.getElementById('login');
 
 btn.addEventListener('click', function login(){
-	let nome_usuario = nome.value;
-	let email_usuario = email.value;
+	const nome_usuario = nome.value;
+	const email_usuario = email.value;
 
 
 	if (nome_usuario == '') {
@@ -27,4 +27,22 @@ btn.addEventListener('click', function login(){
 	}else{
 	     document.classList.remove('invalid');
 	}
+
+	if (email_usuario.value == null) {
+		window.alert('campo inválido')	
+		email_usuario.style.borderColor = '#ff0000'	
+
+		
+	}else if (email_usuario.indexOf('@').value == -1 || email_usuario.indexOf('.').value == -1) {
+		window.alert('email não reconhecido. Tente novamente')
+	}
 });
+
+login()
+
+function tentativas(){
+	const tentativas_totais = 3;
+	const tentativas_realizadas = 0;
+
+	
+}
