@@ -40,9 +40,6 @@ btn.addEventListener('click', function login(){
 
 login()
 
-function tentativas(){
-	const tentativas_totais = 3;
-	const tentativas_realizadas = 0;
 
 	
-}
+
