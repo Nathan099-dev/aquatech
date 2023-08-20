@@ -38,7 +38,7 @@ btn.addEventListener('click', function login(){
 	}
 });
 
-login()
+login();
 
 
 	
