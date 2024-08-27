@@ -9,6 +9,9 @@
     padding: 0 2%;
     display: flex;
     justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 8px 12px;
 }
 
@@ -91,6 +94,18 @@ header{
     text-align: center;
 }
 
+footer{
+    background-color: aqua;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    bottom: 0;
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+}
 
 
 
