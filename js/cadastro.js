@@ -55,7 +55,7 @@ function login(){
 
 		}
 		
-		else if (confirmar_senha_usuario. value == null) {
+		else if (confirmar_senha_usuario.value == null) {
 			window.alert('Campo inválido')
 			confirmar_senha_usuario.style.borderColor = '#ff0000';
 			
