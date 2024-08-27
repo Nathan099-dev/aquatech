@@ -11,11 +11,7 @@ let modal = {
 
 //===========================================================================
 
-const nome = document.getElementById('nome');
-const email = document.getElementById('email');
-const btn = document.getElementById('login');
-
-btn.addEventListener('click', function login(){
+function login(){
 	const nome_usuario = nome.value;
 	const email_usuario = email.value;
 	const telefone_usuario = telefone.value;
@@ -74,7 +70,7 @@ btn.addEventListener('click', function login(){
 			window.alert('cadastro reallizado com sucesso')
 			window.location.href = '../html/login.html'
 		}
-});
+};
 
 login();
 
