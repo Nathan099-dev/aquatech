@@ -13,18 +13,16 @@ let modal = {
 
 
 
-function cadastro(){
+function cadastro(nome, email, senha){
 	const nome_usuario = nome.value;
 	const email_usuario = email.value;
 	const senha_usuario = senha.value;
-	const confirmar_senha_usuario =  confirm.value
-
-
 
 	if (nome_usuario == '') {
 		window.alert('Campo inválido');
-		document.classList.add('invalid');
-
+		const nome_usuario = document.getElementById('nome');
+		nome_usuario.style.border = '1px solid red'
+		return;
 	}
 	
 	else{
@@ -33,36 +31,36 @@ function cadastro(){
 
 	if (email_usuario.value == null) {
 		window.alert('campo inválido')	
-		email_usuario.style.borderColor = '#ff0000'	
+		const email_usuario = document.getElementById('email');
+		email_usuario.style.border = '1px solid red';
+		return;
 
 	}
 		
-		else if (email_usuario.indexOf('@').value == -1 || email_usuario.indexOf('.').value == -1) {
-		window.alert('email não reconhecido. Tente novamente')
+	else if (email_usuario.indexOf('@').value == -1 || email_usuario.indexOf('.').value == -1) {
+		window.alert('email não reconhecido. Tente novamente');
+		const email_usuario = document.getElementById('email');
+		email_usuario.style.border = '1px solid red';
+		return;
 
-
-		}
+	}
 		
-		else if (senha_usuario == null) {
-			window.alert('Campo inválido. Crie uma senha')
-			senha_usuario.style.borderColor = '#ff0000';
+	else if (senha_usuario == null) {
+		window.alert('Campo inválido. Crie uma senha')
+		const senha_usuario = document.getElementById('senha');
+		senha_usuario.style.border = '1px solid red';
+		return;
 
-		}
+	}
 		
-		else if (senha_usuario.length < 8) {
-			window.alert('Sua senha precisa ter o mínimo de 8 caracteres')
-			senha_usuario.style.borderColor = '#ff0000';
-
-		}
+	else if (senha_usuario.length < 8) {
+		window.alert('Sua senha precisa ter o mínimo de 8 caracteres')
+		const senha_usuario = document.getElementById('senha');
+		senha_usuario.style.border = '1px solid red';
+		return;
+	}
 		
-		else if (confirmar_senha_usuario != senha_usuario) {
-			window.alert('As duas senhas cadastradas não são iguais')
-			senha_usuario.style.borderColor = 'red';
-			confirmar_senha_usuario.style.borderColor = 'red';
-
-		}
-		
-		else{
+	else{
 			window.alert('cadastro reallizado com sucesso')
 			window.location.href = '../html/login.html'
 		}
