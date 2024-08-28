@@ -25,7 +25,9 @@ function cadastro(){
 		window.alert('Campo inválido');
 		document.classList.add('invalid');
 
-	}else{
+	}
+	
+	else{
 	     document.classList.remove('invalid');
 	}
 
@@ -33,7 +35,7 @@ function cadastro(){
 		window.alert('campo inválido')	
 		email_usuario.style.borderColor = '#ff0000'	
 
-		}
+	}
 		
 		else if (email_usuario.indexOf('@').value == -1 || email_usuario.indexOf('.').value == -1) {
 		window.alert('email não reconhecido. Tente novamente')
@@ -58,7 +60,9 @@ function cadastro(){
 			senha_usuario.style.borderColor = 'red';
 			confirmar_senha_usuario.style.borderColor = 'red';
 
-		}else{
+		}
+		
+		else{
 			window.alert('cadastro reallizado com sucesso')
 			window.location.href = '../html/login.html'
 		}
