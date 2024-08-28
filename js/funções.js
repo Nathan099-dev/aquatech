@@ -11,7 +11,7 @@ let modal = {
 
 //===========================================================================
 
-function login(){
+function cadastro(){
 	const nome_usuario = nome.value;
 	const email_usuario = email.value;
 	const telefone_usuario = telefone.value;
@@ -72,7 +72,7 @@ function login(){
 		}
 };
 
-login();
+cadastro();
 
 
 	
