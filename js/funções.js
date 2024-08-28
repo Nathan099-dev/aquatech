@@ -11,6 +11,8 @@ let modal = {
 
 //===========================================================================
 
+
+
 function cadastro(){
 	const nome_usuario = nome.value;
 	const email_usuario = email.value;
