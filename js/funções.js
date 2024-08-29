@@ -14,60 +14,35 @@ let modal = {
 
 
 function cadastro(nome, email, senha){
-	const nome_usuario = nome.value;
-	const email_usuario = email.value;
-	const senha_usuario = senha.value;
+	const nome_usuario = document.getElementById('nome').value;
+	const email_usuario = document.getElementById('email').value;
+	const senha_usuario = document.getElementById('senha').value;
 
-	if (nome_usuario == '') {
-		window.alert('Campo inválido');
+	if (!nome_usuario) {
+		alert('Campo inválido! Por favor, preencha este campo corretamente');
 		const nome_usuario = document.getElementById('nome');
-		nome_usuario.style.border = '1px solid red'
+		nome_usuario.style.border = '1px solid red';
 		return;
 	}
-	
-	else{
-	     document.classList.remove('invalid');
+
+	if (!email_usuario) {
+		alert('Campo inválido! Por favor, preencha este campo corretamente');
+		const email_usuario = document.getElementById('email');
+		email_usuario.style.border = '1px solid red'
+		return;
 	}
 
-	if (email_usuario.value == null) {
-		window.alert('campo inválido')	
+	if (email_usuario.indexOf('@').value == -1 || email_usuario.indexOf('.').value == -1) {
+		alert('Campo inválido! Por favor, preencha este campo corretamente');
 		const email_usuario = document.getElementById('email');
 		email_usuario.style.border = '1px solid red';
 		return;
-
 	}
-		
-	else if (email_usuario.indexOf('@').value == -1 || email_usuario.indexOf('.').value == -1) {
-		window.alert('email não reconhecido. Tente novamente');
-		const email_usuario = document.getElementById('email');
-		email_usuario.style.border = '1px solid red';
-		return;
 
-	}
-		
-	else if (senha_usuario == null) {
-		window.alert('Campo inválido. Crie uma senha')
-		const senha_usuario = document.getElementById('senha');
-		senha_usuario.style.border = '1px solid red';
-		return;
-
-	}
-		
-	else if (senha_usuario.length < 8) {
-		window.alert('Sua senha precisa ter o mínimo de 8 caracteres')
+	if (!senha_usuario) {
+		alert('Campo inválido! Por favor, preencha este campo corretamente');
 		const senha_usuario = document.getElementById('senha');
 		senha_usuario.style.border = '1px solid red';
 		return;
 	}
-		
-	else{
-			window.alert('cadastro reallizado com sucesso')
-			window.location.href = '../html/login.html'
-		}
-};
-
-cadastro();
-
-
-	
-
+}
